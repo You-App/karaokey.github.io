@@ -143,3 +143,5 @@ Our goal is to finish up the styling of the website. We will be working on updat
 # Comments by Ming
 * Seems like this team is in great shape.  Good you are doing styling last.
 * In the future, I'm making mobile one of the pick 6 items.
+
+# [Lady Gaga - Bad Romance (ft. Ming Chow)](https://www.youtube.com/watch?v=Stto_aAOGag "Lady Gaga - Bad Romance (ft. Ming Chow)") 
