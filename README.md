@@ -36,7 +36,11 @@ Choose 3:
 
 -The user will be able to search for songs using the Spotify API. Spotify provides data about the song name and artist, and we can use the Genius lyrics API to grab lyric data about the chosen song.
 
+UPDATE: Turns out we didnt need spotify API. We ended up scraping lyrics data off of Metrolyrics, and grabbing the songs directly from Youtube API.
+
 -We are planning to use the Panda.js game framework to make the game interactive for the user. The song lyrics can be animated scrolling across the screen while the song plays.
+
+UPDATE: We did not need Panda.js for rendering, but we did use Recorder.js for recording and visualizing the audio.
 
 -The server can store previously searched songs, user preferences, and a list of the most popular songs. The data will persist on the server through multiple sessions.
 
@@ -67,7 +71,7 @@ The user would “miss”  a word if they typed the word incorrectly or they typ
 ![Image1](http://i.imgur.com/k8FX6xs.png)
 ![Image1](http://i.imgur.com/KtAja0s.png)   
 
-#Comments by Ming
+# Comments by Ming
 * The idea is wild, amazing.  One thing I am not getting: your Features list read like a collection of technologies but what do players do?  I mean, seems like a player will need to be typing in lyrics --how will you do that?  That should have been in Features list.
 
 ---
@@ -96,7 +100,7 @@ Be able to search for and play a chosen song on our site.
 Retrieve json object containing lyrics and metadata for the chosen song.
 Have a javascript microphone recorder and uploader for audio on our site. 
 
-#Comments by Ming
+# Comments by Ming
 * That challenge: if you can solve it, you can be very rich.  Why not use the same idea as the DOM lab we did?
 
 ---
