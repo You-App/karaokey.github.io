@@ -27,8 +27,8 @@ window.addEventListener("load", function() {
     var imageBox = document.getElementById("rank-image");
 
     var xhr = new XMLHttpRequest();
-    xhr.open('POST', 'http://localhost:5000/score', true);
-    // xhr.open('POST', 'https://karaokey-server.herokuapp.com/score', true);
+    // xhr.open('POST', 'http://localhost:5000/score', true);
+    xhr.open('POST', 'https://karaokey-server.herokuapp.com/score', true);
     xhr.setRequestHeader('Content-type','application/json');  
     xhr.send(obj);
     xhr.onreadystatechange = function(response) {

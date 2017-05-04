@@ -135,8 +135,8 @@ var uuid = "";
     blob.uuid = uuid;
     if (partial == "partial") {
       var xhr = new XMLHttpRequest();
-      // xhr.open('POST', 'https://karaokey-server.herokuapp.com/file', true);
-      xhr.open('POST', 'http://localhost:5000/file', true);
+      xhr.open('POST', 'https://karaokey-server.herokuapp.com/file', true);
+      // xhr.open('POST', 'http://localhost:5000/file', true);
       xhr.setRequestHeader('Content-type','audio/wav');
       xhr.setRequestHeader('uuid', uuid);
       xhr.send(blob);

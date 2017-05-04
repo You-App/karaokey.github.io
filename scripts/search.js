@@ -12,8 +12,8 @@ window.onload = function() {
         });
 
         var xhr = new XMLHttpRequest();
-        // xhr.open('POST', 'https://karaokey-server.herokuapp.com/search', true);
-        xhr.open('POST', 'http://localhost:5000/search', true);
+        xhr.open('POST', 'https://karaokey-server.herokuapp.com/search', true);
+        // xhr.open('POST', 'http://localhost:5000/search', true);
         xhr.setRequestHeader('Content-type','application/json');  
         xhr.send(obj);
         console.log(obj);
