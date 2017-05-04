@@ -1,0 +1,151 @@
+body {
+  background-color: rgb(100,100,100);
+  font-family: 'Raleway', sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 400;
+  font-style: normal;
+  overflow-x: hidden;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("../images/anti-background.jpg");
+ /* background-image: url("images/ariana-background.jpg");  
+ */
+  height: 100%;
+  width: 100%;
+  z-index: -2; 
+}
+
+/***************************** cover ****************************/
+
+#container {
+  min-height: 100%;
+  position: relative;
+}
+
+#top{
+  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 100vw;
+  height: 70px;
+  display: block;
+  vertical-align: middle;
+}
+
+#logo img{
+  max-width: 70px;
+  text-align: left;
+}
+
+.title {
+  padding-top: 100px;
+  padding-left: 30px; 
+  opacity: 1;
+}
+
+#major-text {
+  font-size: 85px;
+  font-weight: bolder;
+}
+
+/**************************** search ****************************/
+.search-wrapper {
+  margin-left: 30px;
+  vertical-align: middle;
+}
+
+#field-wrapper {
+  width: 75%;
+  white-space: nowrap;
+  position: relative;
+  vertical-align: middle;
+}
+
+#field-wrapper input{
+  margin-right: 20px;
+}
+
+#field-wrapper input.fields{
+  width: 180px;
+  height: 30px;
+  background: white;
+  border: none;
+  font-size: 10pt;
+  float: left;
+  padding-left: 15px;
+
+  -webkit-appearance: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#field-wrapper img{
+  max-width: 30px;
+}
+
+.search-wrapper input#button {
+  -webkit-border-top-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+  -moz-border-radius-topright: 5px;
+  -moz-border-radius-bottomright: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  height: 28px;
+  width: 30px;
+  border: none;
+  font-size: 10pt;
+  background-color: white;
+  float: left;
+}
+
+.search-artist {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border: none;
+  margin-top: 115px; /* margin-top + border-width */
+  margin-right: 30px; /* border-width */
+  background: transparent;
+  color: #888;
+  font-family: "Titillium Web", sans-serif;
+  font-size: 40px;
+  line-height: 100px;
+}
+
+.button {
+    border: none;
+    color: black;
+    margin-top: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.search-wrapper input#button:hover {
+  background-color: #5d697c;
+  color: white;
+}
+
+.end {
+  display: inline-block;
+  font-size: 14px;
+  color: white;
+}
+
+/***************************** footer *********************/
+footer {
+    position: absolute;
+    width: 100vw;
+    bottom: 0px;
+    margin-bottom: 0px;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.6);
+    text-align: center;
+    vertical-align: middle;
+}
+

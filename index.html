@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Karaokey</title>
+	<link rel="k icon" href="images/icon.png"/> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/index.css">
+	<script src="scripts/search.js"></script>
+	
+</head>
+<body>
+
+<div id="mobile">
+	<h3>Oops, please visit the site on a desktop device.</h3>
+</div>
+
+
+
+<div id="desktop">
+	<div id="logo" onclick="window.location.reload()"><img src="images/icon-white.png"></div>
+
+	<div class="body-info">
+		<div class="search">
+		<form>
+			<div id="field-wrapper">
+			<input class="fields" id ="song_input" type="search" placeholder="Song" size="30">
+			<input class="fields" id ="artist_input" type="search" placeholder="Artist" size="30">
+			<a id="submitButton" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)"> <img id="nextimage" src="images/move-to-next.png" width="30px"></a>
+			</div>
+		</form>
+		</div>
+
+	</div>
+
+	<div id= "home_background">
+	  <img class="dynamic_bg" src="images/diva.jpg" style="width:100%">
+	  <img class="dynamic_bg" src="images/taeyeon_stage.jpg" style="width:100%">
+	  <img class="dynamic_bg" src="images/kendrick.jpg" style="width:100%">
+	  <img class="dynamic_bg" src="images/puth.jpg" style="width:100%">
+	  <img class="dynamic_bg" src="images/taeyeon_rain2.png" style="width:100%">
+	</div>
+
+</div>
+
+<script type="text/javascript">
+
+	// var form = document.getElementById('form');
+	var elem = document.getElementById('song-name');
+// 	form.onsubmit = function() {
+// 		var song = elem.value;
+// //		artist = "Ariana Grande";
+// 		getinfo(song, artist);
+// 	};
+
+
+	function getinfo(song, artist){
+		artist = artist.toLowerCase();
+		song = song.toLowerCase();
+		artist = artist.replace(/\W/g, '');
+		song = song.replace(/\W/g, '');
+		if (artist.startsWith('the')) {
+			artist = artist.substring(4, artist.length);
+		}
+		url = "http://azlyrics.com/lyrics/"+ artist + "/" + song + ".html";
+		alert(url);
+
+	};
+
+</script>
+
+<script>
+
+var myIndex = Math.floor(Math.random()*document.getElementsByClassName("dynamic_bg").length);
+carousel();
+
+function carousel() {
+    console.log("spin");
+    var i;
+    var x = document.getElementsByClassName("dynamic_bg");
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+</script>
+
+
+</body>
+</html>
+

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Karaokey Score</title>
+	<link rel="k icon" href="images/icon.png"/> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="style/score.css">
+	<script src="scripts/score.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="scripts/score.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body onload="javascript:getRank()">
+ <header id="top" class="header row">
+    <div id="logo"><a href="index.html"><img src="images/icon-white.png"></a></div>
+</header>
+
+
+<div class="wrapper">
+	<div id="player-lyrics">
+		Your lyrics
+	</div>
+
+	<div id="actual-lyrics">
+		Actual lyrics
+	</div>
+</div>
+
+<div class="bottom">
+  <div id="rank">
+  	<div id="your-rank">Your rank: </br></div>
+  	<img id="rank-image"></img>
+  </div>
+
+  <div id="score">
+  	Your score:
+  	<div id="score-text"></div>
+  </div>
+
+  <div id="nav-buttons">
+  	<p><a class="button" id="searchBtn" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" href="index.html"><img id="searchImg" src="images/search.png"> New Song!</a></p>
+		
+	<p><a class="button" id="replayBtn" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" href="javascript:history.back()" ><img id="replayImg" src="images/replay.png"> Play Again!</a></p>
+  </div>
+</div>
+	<!-- <div id="your-score">
+		Your rank: </br>
+		<img id="rank-image" src="images/b.png">
+	</div> 
+
+	<div id="score-text">
+		Score: rank:
+	</div>
+	
+	<div class="buttons">
+		<p><a class="button" href="index.html"><img src="images/search.png"> Find a new song!</a></p>
+		
+		<p><a class="button" href="javascript:history.back()" ><img src="images/replay.png"> Play again!</a></p>
+	</div> -->
+	
+
+
+</body>
+</html>

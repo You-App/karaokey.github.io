@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="k icon" href="images/icon.png"/> 
+    <meta charset="utf-8">
+    <title>Karaokey Sing</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+    <link rel="stylesheet" href="style/ingame.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="scripts/ingame.js"></script>
+    <script src="scripts/jquery-2.1.3.min.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/audiodisplay.js"></script>
+    <script src="scripts/recorderWorker.js"></script>
+    <script src="scripts/recorder.js"></script>
+ 
+</head>
+
+<body>
+     <header id="top" class="header row">
+        <div id="logo"><a href="index.html"><img src="images/icon-white.png"></a></div>
+    </header>
+
+    <div class="container"> 
+
+        <iframe id="video"></iframe>
+        <div id="lyrics" style="overflow-y: scroll;">Loading</div>
+
+
+    </div>  
+    
+    <div class="icons">
+
+        <a id="startBtn" class="winlinkbtn" data-reactid="21" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onclick="startClick(this);"><img id="startImg" src="images/record-button.png"></a>
+        <a id="stopBtn" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onclick="stop(this)"><img id="stopImg" src="images/stop.png"> </a> 
+        <a id="replayBtn" onmousedown="mouseDown(this)" onmouseup="mouseUp(this)" onclick="replay(this);"><img id="replayImg" src="images/replay.png"></a>
+        
+    </div>
+
+    <canvas id="visualization"></canvas>
+
+</body>
+</html>
